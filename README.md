@@ -1,4 +1,17 @@
+## Body Health Calculator
 
+A simple Flutter application for calculating BMI and BMR.
+
+📱 Features
+- Calculate BMI
+- Calculate BMR
+- Clean mobile UI
+- Bottom navigation (BMI / About / BMR)
+- Splash screen
+
+## 🛠 Tech Stack
+- Flutter
+- Dart
 
 <img width="250" src="https://github.com/user-attachments/assets/81ab1cd3-3bc4-4d7e-a7e3-0bed367c7726" />
 
