@@ -30,8 +30,8 @@ class _SplashScreenUiState extends State<SplashScreenUi> {
           children: [
             Image.asset( 
               'assets/images/calculator.png',
-            width: MediaQuery.of(context).size.width * 0.50,
-            height: MediaQuery.of(context).size.height * 0.50,
+            width: 250,
+            height: 250,
             fit: BoxFit.cover,
           ),
           SizedBox(

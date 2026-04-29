@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
- 
+
 class BmiUi extends StatefulWidget {
   const BmiUi({super.key});
- 
+
   @override
   State<BmiUi> createState() => _BmiUiState();
 }
- 
+
 class _BmiUiState extends State<BmiUi> {
   TextEditingController hCtrl = TextEditingController();
   TextEditingController wCtrl = TextEditingController();
@@ -95,12 +95,12 @@ class _BmiUiState extends State<BmiUi> {
                     }
                     //คำนวณ
                     double w = double.parse(wCtrl.text);
-                    double h = double.parse(hCtrl.text) /100; //แปลง cm เป็น m
-                    
+                    double h = double.parse(hCtrl.text) / 100; //แปลง cm เป็น m
+
                     //แสดงผล
-                      setState(() {
-                        bmiValue = w / (h * h);
-                      });
+                    setState(() {
+                      bmiValue = w / (h * h);
+                    });
                   },
                   child: Text(
                     'คำนวณ BMI',
@@ -150,7 +150,7 @@ class _BmiUiState extends State<BmiUi> {
                   decoration: BoxDecoration(
                     color: Colors.grey[200],
                     borderRadius: BorderRadius.circular(8),
-                  ),      
+                  ),
                   child: Center(
                     child: Column(
                       children: [
@@ -172,7 +172,7 @@ class _BmiUiState extends State<BmiUi> {
                         ),
                       ],
                     ),
-                  ),            
+                  ),
                 ),
               ],
             ),

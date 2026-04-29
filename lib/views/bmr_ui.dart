@@ -41,7 +41,6 @@ class _BmrUiState extends State<BmrUi> {
                   fit: BoxFit.cover,
                 ),
                 SizedBox(height: 35),
-
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text('เพศ'),
@@ -75,7 +74,6 @@ class _BmrUiState extends State<BmrUi> {
                     ),
                   ],
                 ),
-
                 SizedBox(height: 10),
                 Align(
                   alignment: Alignment.centerLeft,
@@ -94,7 +92,6 @@ class _BmrUiState extends State<BmrUi> {
                     ),
                   ),
                 ),
-
                 SizedBox(height: 20),
                 Align(
                   alignment: Alignment.centerLeft,
@@ -135,7 +132,9 @@ class _BmrUiState extends State<BmrUi> {
                 ElevatedButton(
                   onPressed: () {
                     // Validate inputs
-                    if (wCtrl.text.isEmpty || hCtrl.text.isEmpty || ageCtrl.text.isEmpty) {
+                    if (wCtrl.text.isEmpty ||
+                        hCtrl.text.isEmpty ||
+                        ageCtrl.text.isEmpty) {
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text('กรุณากรอกข้อมูลให้ครบถ้วน'),
@@ -211,7 +210,7 @@ class _BmrUiState extends State<BmrUi> {
                   decoration: BoxDecoration(
                     color: Colors.grey[200],
                     borderRadius: BorderRadius.circular(8),
-                  ),      
+                  ),
                   child: Center(
                     child: Column(
                       children: [
@@ -233,7 +232,7 @@ class _BmrUiState extends State<BmrUi> {
                         ),
                       ],
                     ),
-                  ),            
+                  ),
                 ),
               ],
             ),
